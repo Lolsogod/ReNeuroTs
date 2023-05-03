@@ -1,0 +1,19 @@
+{
+  "name": "re-neuro-ts",
+  "version": "1.0.0",
+  "description": "cool nerual network",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nerual",
+    "network"
+  ],
+  "author": "lolso",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "typescript": "^4.9.5"
+  }
+}
