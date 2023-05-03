@@ -135,7 +135,6 @@ class Network {
     }
 
     trainOnce(dataSet: number[][][]) {
-        console.log("training")
         if (!Array.isArray(dataSet)) return;
 
         dataSet.forEach((data) => {
@@ -234,32 +233,48 @@ const data2: number[][][]= [
   })*/
 
 console.log("--------network3--------")
-const network2: Network = new Network(15, 15,5)
+const network2: Network = new Network(15, 15)
 const data2: number[][][]= [
     [[1, 1, 1,
       1, 0, 1,
       1, 0, 1,
       1, 0, 1,
       1, 1, 1,], 
-     [1, 0, 0, 0]],
+     [1, 1, 1,
+      1, 0, 1,
+      1, 0, 1,
+      1, 0, 1,
+      1, 1, 1,]],
     [[0, 1, 0,
       1, 1, 0,
       0, 1, 0,
       0, 1, 0,
       1, 1, 1,], 
-     [0, 1, 0, 0]],
+     [0, 1, 0,
+      1, 1, 0,
+      0, 1, 0,
+      0, 1, 0,
+      1, 1, 1,]],
     [[0, 1, 0,
       1, 0, 1,
       0, 0, 1,
       0, 1, 0,
       1, 1, 1,], 
-    [0, 0, 1, 0]],
+      [0, 1, 0,
+        1, 0, 1,
+        0, 0, 1,
+        0, 1, 0,
+        1, 1, 1,]],
     [[1, 1, 1,
       0, 0, 1,
       1, 1, 1,
       0, 0, 1,
       1, 1, 1,], 
-    [0, 0, 0, 1]]];
+      [1, 1, 1,
+        0, 0, 1,
+        1, 1, 1,
+        0, 0, 1,
+        1, 1, 1,]]];
 
   const testData2: number[][] = [
     [1, 1, 1,
